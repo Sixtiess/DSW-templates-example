@@ -6,23 +6,44 @@
 
 {% block content %}
     <!--page content-->
-    <h1 class="center">Handicap Calculator</h1>
-	
-	<form>
-		<div class="form-group">
-			<label for="exampleInputEmail1">Email address</label>
-			<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-			<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+	<br>
+	<br>
+    <h1 class="center">Golf Handicap Calculator</h1>
+	<h3 class="center">(All answers in comparison to par)</h3>
+	<h3 class="center">(Example: -2 is two strokes under par, 6 is six strokes over par)</h3>
+	<br><br>
+	<form action='submit'>
+		<div class="form-group center">
+			<label for="rd1">Round 1 Score</label>
+			<input type="range" min="-9" max="36" name="rd1" oninput="this.nextElementSibling.value = this.value">
+			<output>14</output>
 		</div>
-		<div class="form-group">
-			<label for="exampleInputPassword1">Password</label>
-			<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+		<br>
+		<div class="form-group center">
+			<label for="rd2">Round 2 Score</label>
+			<input type="range" min="-9" max="36" name="rd2" oninput="this.nextElementSibling.value = this.value">
+			<output>14</output>
 		</div>
-		<div class="form-check">
-			<input type="checkbox" class="form-check-input" id="exampleCheck1">
-			<label class="form-check-label" for="exampleCheck1">Check me out</label>
+		<br>
+		<div class="form-group center">
+			<label for="rd3">Round 3 Score</label>
+			<input type="range" min="-9" max="36" name="rd3" oninput="this.nextElementSibling.value = this.value">
+			<output>14</output>
 		</div>
-		<button type="submit" class="btn btn-primary">Submit</button>
+		<br>
+		<div class="form-group center">
+			<label for="rd4">Round 4 Score</label>
+			<input type="range" min="-9" max="36" name="rd4" oninput="this.nextElementSibling.value = this.value">
+			<output>14</output>
+		</div>
+		<br>
+		<div class="form-group center">
+			<label for="rd5">Round 5 Score</label>
+			<input type="range" min="-9" max="36" name="rd5" oninput="this.nextElementSibling.value = this.value">
+			<output>14</output>
+		</div>
+		<br><br>
+		<button type="submit" class="btn btn-primary cnter">Submit</button>
 	</form>
 	
 	

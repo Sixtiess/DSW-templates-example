@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% set active_page = "calculator" %}
+
+{% block title %}Calculator{% endblock %}
+
+{% block content %}
+    <!--page content-->
+	<br>
+    <h1 class="center">Calculator</h1>
+	<br><br>
+	<h3 class = "center">Your handicap should be...</h3>
+	<h3 class="center">{{ response }}</h3>
+	<!-- <p class="marginned">{{ rd2 }}</p> -->
+{% endblock %}
